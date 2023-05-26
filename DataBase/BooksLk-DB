@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 26, 2023 at 03:28 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `bookslk-db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `booktb`
+--
+
+CREATE TABLE `booktb` (
+  `bookid` int(11) NOT NULL,
+  `bookname` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `bookcategory` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `user_email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `booktb`
+--
+
+INSERT INTO `booktb` (`bookid`, `bookname`, `author`, `price`, `bookcategory`, `status`, `photo`, `user_email`) VALUES
+(1, 'C Programming', ' Dennis Ritchie', '2200', 'New', 'Active', 'c_book.jpg', 'admin'),
+(6, 'Effective Java', 'Joshua Bloch', '3400', 'New', 'Active', 'images.jpeg', 'admin'),
+(7, 'Artificial Intelligence', 'Stuart J. Russell', '4500', 'Old', 'Active', 'ai.jpeg', 'admin'),
+(8, 'Machine Learning', 'Oliver Tableau', '5100', 'New', 'Active', 'ml.jpeg', 'admin'),
+(9, 'The Road to Learn React', 'Robin Wieruch', '3700', 'New', 'Active', 'react.jpeg', 'admin'),
+(11, 'Learning SQL', 'Alan Beaulieu', '3600', 'New', 'Active', 'sql.jpeg', 'admin');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `booktb`
+--
+ALTER TABLE `booktb`
+  ADD PRIMARY KEY (`bookid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `booktb`
+--
+ALTER TABLE `booktb`
+  MODIFY `bookid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
