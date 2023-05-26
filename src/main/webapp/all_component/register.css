@@ -1,0 +1,142 @@
+
+/* -- register page -- */
+
+.background-login{
+    position: relative;
+ /*   width: 100%;*/
+   min-height: 82vh;
+}
+.side-color-bar{
+   position: absolute;
+   width: 70%;
+   right: 0;
+   min-height: 82vh;
+   background-color: rgb(15, 1, 27);
+   clip-path: polygon(37% 0, 100% 0, 100% 100%, 64% 100%);
+   z-index: -99;
+
+}
+
+.login-container{
+    background-color: rgb(15, 1, 27);
+   /* width: 60%;*/
+    height: 70vh;
+    z-index: 3000;
+    border-radius: 50px;
+ }
+ .login-container .login-sty-grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: "login-form grid-img " ;
+     grid-gap: 10px;
+ }
+ .grid-img{
+    /*https://images.unsplash.com/photo-1624254009479-6a9b09eeddd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjkzfHxnaXJsJTIwcmVhZGluZyUyMGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60*/
+   background-image: url("https://images.unsplash.com/photo-1616078202167-29d2a57f3575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGdpcmwlMjByZWFkaW5nJTIwYm9va3xlbnwwfHwwfHw%3D&w=1000&q=80");
+   border-radius: 50px;
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */    
+   height: 70vh;
+   grid-area: grid-img ;
+ }
+ .grid-img .icons-soical{
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     margin-top: 63vh;
+ }
+ .grid-img .icons-soical img{
+    width: 35px;
+    margin: 0 10px;
+ }
+
+ .login-form{
+   position: relative;
+   padding: 50px 50px;
+   border-radius: 50px 0 0 50px;
+   height: 70vh;
+   grid-area: login-form;
+   background-color: rgb(15, 1, 27);
+ }
+ .login-form h1{
+  text-transform: uppercase;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+   color: #fff;
+ }
+ .login-form .social-icons-in-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+ }
+ .social-icons-in-login a i{
+     font-size: 25px;
+     padding: 0 15px;
+     color: #fff;
+ }
+ .login-form h5{
+    color: #c5bfbf;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .login-form .form-div{
+    margin: 40px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+ }
+ .form-div form input{
+    width: 350px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 8px;
+    color: #fff;
+ }
+ .fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    color: #fff;
+ }
+ .form-div form input[type="text"]::placeholder{
+     font-size: 15px;
+     color: #6d6969;
+ }
+ .form-div form input[type="email"]::placeholder{
+     font-size: 15px;
+     color: #6d6969;
+ }
+ .form-div form input[type="password"]::placeholder{
+     font-size: 15px;
+     color: #6d6969;
+  }
+ .form-div form .rainbow{
+   width: 350px;
+ /*  margin: 10px 0;*/
+   padding: 8px;
+   border-radius: 50px;
+   background-color: rgb(53, 8, 93);
+   color: #fff;
+   border: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   cursor: pointer;
+ }
+ .form-div form .rainbow:hover{
+   background-color: #dd163b;
+   animation:slidebg 2s linear infinite;
+}
+.form-div .register-text{
+     align-items: center;
+     margin-top: 10px;
+     font-size: 13px;
+}
+.form-div .register-text a{
+     text-decoration: none;
+     color: #1787f6;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* end register */

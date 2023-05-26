@@ -1,0 +1,176 @@
+ /*.admin-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+            padding: 10px 45px;
+            font-family: 'Audiowide', cursive;
+        }
+        .admin-nav-logo h1{
+            font-size: 30px;
+        }
+        .admin-nav-social-icon i{
+            font-size: 30px;
+            margin: 15px;  
+            color: #000;
+        }*/
+     
+/* ----- top nav bar ------ */
+ .nav-top-bar{
+    position: relative;
+    padding: 25px 35px;
+    background-color:#fff;
+    display: flex;
+    width: 100%;
+}
+ .nav-top-bar .nav-logo{
+  /*  background-color: #fec53a;*/
+    flex: 3;
+}
+ .nav-top-bar .nav-logo h1{
+    padding-top: 5px;
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.nav-top-bar .nav-search-bar{
+    flex: 6;
+   /* background-color: #6466ee;*/
+    position: relative;
+}
+.nav-top-bar .nav-search-bar .search-field{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+}
+ .search-field button{
+    margin: 0;
+    width: 9%;
+   /* background-color: #ca0a40;*/
+   background-color: #dea807;
+    border: none;
+    padding: 11px 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.search-field button:hover{
+    background-color: #e91e63;
+}
+.search-field button i{
+    color: #fff;
+}
+.search-field  form{
+    background-color: #dea807;
+    width: 600px;
+}
+.search-field  form input{
+    width: 90%;
+    padding: 11px 10px;
+    border: none;
+    font-family:  sans-serif;
+    border: 1px solid #dea807;
+    margin: 0;
+} 
+.nav-top-bar .nav-ca-lo-re{
+   flex: 3;
+  /* background-color: blueviolet;*/
+   align-items: center;
+   position: relative;
+}
+ .nav-top-bar .nav-ca-lo-re .links{
+    position: absolute;
+    top:50%;
+    left: 20%;
+    transform: translate(-30%, -50%);
+}
+ .nav-top-bar .nav-ca-lo-re .links a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #004f1a;
+    transition: 0.5s all;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #004f1a;
+}
+.nav-top-bar .nav-ca-lo-re .links a:hover{
+    background-color: #3ff208;
+    padding: 10px;
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 5px;
+    border: none;
+}
+.top-bar-social-links{
+    display: flex;
+}
+     
+     
+     
+     
+     
+        .admin-down-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 5000;
+            position: sticky;
+            top: 0;
+            padding: 18px 100px;
+            background-color: #000275;
+        }
+        .admin-down-nav h4{
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            font-size: 20px;
+        }
+        .admin-down-nav a{
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            transition: 0.3s all;
+            padding: 5px 10px;
+        }
+        .admin-down-nav a:hover{
+            text-decoration: none;         
+            background-color: #fff;
+            transition: 0.3s all;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: #000;
+        }
+        .admin-hero-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .admin-hero-grid a{
+            text-decoration: none;
+        }
+        .admin-hero-grid .grid-admin{
+            background-color: #fff;
+            border: 1px solid #d4cfcf;
+            text-align: center;
+            padding: 35px 0;
+            transition: 0.4s ease-in;
+            color: #000;
+            border-radius: 10px;
+        }
+        .admin-hero-grid .grid-admin:hover{
+            text-decoration: none;
+            background-color: #5e0160;
+            color: #fff;
+            transition: 0.3s ease-in-out;
+        }
+         .admin-hero-grid .grid-admin:hover p {
+            border-bottom: 0;
+         }
+         
+        .admin-hero-grid .grid-admin i{
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
