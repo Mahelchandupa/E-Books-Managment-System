@@ -1,4 +1,4 @@
-# E-Books-Managment-System
+# E Books Managment System
  This project is a web application developed using Maven as a build automation and dependency management tool. The main focus of this project is on server-side development, leveraging JSP and Servlets to handle requests and generate dynamic content. The backend logic written in Java with Servlets handles the communication with the database.
 
 ### Design
